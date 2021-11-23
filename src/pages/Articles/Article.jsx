@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
-function News() {
+function Article() {
   const URL =
     "https://newsapi.org/v2/top-headlines?country=id&apiKey=5f485a2cbdd6436bb5f2b9398f6ae287";
   const [news, setNews] = useState([]);
@@ -54,4 +54,4 @@ function News() {
   );
 }
 
-export default News;
+export default Article;

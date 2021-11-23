@@ -1,8 +1,9 @@
 import React from "react";
-import roundPhoto from "../../assets/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
-import './home.css';
+// import roundPhoto from "../../assets/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
 import {useHistory} from "react-router-dom"
-import LiveClock from "../../components/LiveClock";
+import ImageBanner from "../../components/ImageBanner";
+import CircleSosmed from "../../components/CircleSosmed";
+import Article from "../Articles/Article";
 
 export default function Home() {
   const history = useHistory();
@@ -11,7 +12,13 @@ export default function Home() {
   }
   return (
     <div>
-      <div className="profile h-100">
+        <section id="section-1">
+          <ImageBanner/>
+          <CircleSosmed/>
+        </section>
+        
+      
+      {/* <div className="profile h-100">
         <section className="bio">
           <div className="container m-auto">
             <LiveClock/>
@@ -35,7 +42,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   );
 }

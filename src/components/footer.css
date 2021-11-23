@@ -1,0 +1,11 @@
+footer{
+    background: #d1cfcf url("../assets/footer_blob.svg") no-repeat center center;
+}
+
+.text-footer{
+    text-shadow: 5px 4px 4px rgba(23, 23, 17, 0.4);
+}
+
+.footer-content{
+    backdrop-filter: blur(2px);
+}

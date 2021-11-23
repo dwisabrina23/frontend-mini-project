@@ -3,9 +3,13 @@ import {Switch, Route} from "react-router-dom";
 import Navbar from '../components/Navbar';
 import Home from '../pages/Home/HomePage';
 import NotFoundPage from '../pages/NotFound/NotFoundPage';
-import Contact from '../pages/Contact/Contact';
-import ReviewPage from '../pages/Review/ReviewPage';
-import News from '../pages/News/News';
+import Article from '../pages/Articles/Article';
+import Gallery from '../pages/Gallery/Gallery';
+import Catalog from '../pages/Catalog/Catalog';
+import Order from '../pages/Orders/Order'
+import AdminPage from '../pages/Admin/AdminPage';
+import LoginPage from '../pages/Login/LoginPage';
+import Footer from '../components/Footer';
 
 function Router(props) {
     return (
@@ -13,18 +17,36 @@ function Router(props) {
             <Route exact path="/">
                 <Navbar/>
                 <Home/>
+                <Footer/>
             </Route>
-            <Route exact path="/contact">
+            {/* <Route exact path="/services">
                 <Navbar/>
-                <Contact/>
+                <Service/>
+            </Route> */}
+            <Route exact path="/catalog">
+                <Navbar/>
+                <Catalog/>
+                <Footer/>
             </Route>
-            <Route exact path="/review">
+            <Route exact path="/gallery">
                 <Navbar/>
-                <ReviewPage/>
+                <Gallery/>
             </Route>
-            <Route exact path="/news">
+            <Route exact path="/articles">
                 <Navbar/>
-                <News/>
+                <Article/>
+            </Route>
+            <Route exact path="/order">
+                <Navbar/>
+                <Order/>
+            </Route>
+            <Route exact path="/admin">
+                <Navbar/>
+                <AdminPage/>
+            </Route>
+            <Route exact path="/login">
+                <Navbar/>
+                <LoginPage/>
             </Route>
             <Route path="*">
                 <NotFoundPage/>

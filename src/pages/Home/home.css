@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 
 .profile{
-    background-image: url("../../assets/bg-img.png");
+    /* background-image: url("../../assets/bg-img.png"); */
     font-family: "Roboto", sans-serif;
     height: 100% !important;
     background-repeat: no-repeat; 
