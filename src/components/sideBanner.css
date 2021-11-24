@@ -1,0 +1,27 @@
+
+.side-contact-ctr{
+    width: 90%;
+    display: block;
+    flex-wrap: wrap;
+    padding: 1rem, 3rem;
+    margin: auto;
+    text-align: justify;
+}
+
+.text-contact{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+
+    letter-spacing: 0.03em;
+
+    color: #107B79;
+
+    text-shadow: 1px 4px 4px rgba(23, 23, 17, 0.4);
+}
+
+.side-contact-wrapper{
+    margin-top: 2.5em;
+}
