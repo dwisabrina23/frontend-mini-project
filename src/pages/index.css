@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.text-page-title{
+    font-weight: bolder;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-variant: small-caps;
+    color: #113D3C;
+}
