@@ -10,6 +10,7 @@ import Order from '../pages/Orders/Order'
 import AdminPage from '../pages/Admin/AdminPage';
 import LoginPage from '../pages/Login/LoginPage';
 import Footer from '../components/Footer';
+import Contact from '../pages/ContactUs/Contact';
 
 function Router(props) {
     return (
@@ -47,6 +48,10 @@ function Router(props) {
             <Route exact path="/login">
                 <Navbar/>
                 <LoginPage/>
+            </Route>
+            <Route exact path="/contact">
+                <Navbar/>
+                <Contact/>
             </Route>
             <Route path="*">
                 <NotFoundPage/>

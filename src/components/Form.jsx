@@ -108,12 +108,12 @@ function Form() {
   }
 
   return (
-    <div>
       <div
-        className="col-md-7 col-sm-7"
-        style={{ marginLeft: "50px", marginTop: "39px" }}
+        // className="col-lg col-md col-sm px-4"
+        className="card form-contact-wrapper"
+        style={{ marginLeft: "50px", marginTop: "2.5em" }}
       >
-        <h2 className="mb-3">Contact Us</h2>
+        {/* <h2 className="mb-3">Contact Us</h2> */}
         <form className="form needs-validation" onSubmit={handleSubmit}>
           <div className="mb-3 has-validation">
             <label htmlFor="fullname" className="form-label">
@@ -206,7 +206,6 @@ function Form() {
           </button>
         </form>
       </div>
-    </div>
   );
 }
 

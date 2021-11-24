@@ -76,7 +76,7 @@ function Footer(props) {
                   <a href="#!" className="text-white">
                     Follow us:
                     <span className="h-25">
-                      <CircleSosmed/>
+                      <CircleSosmed color="white"/>
                     </span>
                   </a>
                 </li>

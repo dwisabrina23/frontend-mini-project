@@ -1,4 +1,8 @@
-
+.form-contact-wrapper{
+    padding: 2.734em;
+    box-shadow: 1px 5px 10px 2px rgba(1, 83, 82, 0.267);
+    border-radius: 15px;
+}
 #floatingTextarea {
     height: 112px;
 }
@@ -25,7 +29,9 @@ sup {
     margin-bottom: 1px;
 }
 .form-control{
-    border: 2px solid #f0f0f0;
+    border: 2px solid #FE7C00;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
 }
 
 input.form-control.input.error{
@@ -44,6 +50,7 @@ select.form-select{
 
 input::placeholder{
     font-size: 14px;
+    padding-left: 0.5em;
 }
 
 .form-control.success input {
