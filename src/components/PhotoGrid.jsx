@@ -16,6 +16,19 @@ function PhotoGrid() {
             <PhotoCard size="medium" />
             <PhotoCard size="medium" />
             <PhotoCard size="small"/>
+            {/* section 2 */}
+            <PhotoCard size="small" />
+            <PhotoCard size="medium" />
+            <PhotoCard size="large" />
+            <PhotoCard size="small"/>
+            <PhotoCard size="large"/>
+            <PhotoCard size="medium"/>
+            <PhotoCard size="large" />
+            <PhotoCard size="small"/>
+            <PhotoCard size="large"/>
+            <PhotoCard size="medium" />
+            <PhotoCard size="medium" />
+            <PhotoCard size="small"/>
         </div>
     )
 }

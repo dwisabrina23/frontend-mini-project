@@ -13,7 +13,8 @@ function Navbar() {
     history.push('/about-us');
     history.push('/contact');
     history.push('/login');
-    history.push('/articles');
+    history.push('/articles')
+    history.push('/projects');
   };
   return (
     <div>
@@ -45,17 +46,33 @@ function Navbar() {
                     CATALOG
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="hoverable nav-link"
+                    onClick={handleClick}
+                    to="/gallery">
+                    GALLERY
+                  </NavLink>
+                </li>
+                <li className="nav-item ">
+                    <NavLink
+                      className="hoverable nav-link"
+                      onClick={handleClick}
+                      to="/contact">
+                      CONTACT
+                    </NavLink>
+                </li>
                 <li className="nav-item dropdown hoverable">
                   <span className="dropdown-toggle" data-bs-toggle="dropdown">
                     MORE
                   </span>
                   <div className="dropdown-menu mb-3">
-                    <NavLink
+                    {/* <NavLink
                       className="hoverable dropdown-item"
                       onClick={handleClick}
                       to="/gallery">
                       GALLERY
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink
                       className="hoverable dropdown-item"
                       onClick={handleClick}
@@ -65,8 +82,8 @@ function Navbar() {
                     <NavLink
                       className="hoverable dropdown-item"
                       onClick={handleClick}
-                      to="/contact">
-                      CONTACT
+                      to="/projects">
+                      PROJECTS
                     </NavLink>
                     <NavLink
                       className="hoverable dropdown-item"
@@ -78,7 +95,7 @@ function Navbar() {
                 </li>
                 <li className="b-login">
                   <button
-                    class="btn btn-outline-success"
+                    className="btn btn-outline-success"
                     type="button"
                     onClick={handleClick}
                     to="/login">

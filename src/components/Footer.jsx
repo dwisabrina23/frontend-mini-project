@@ -7,7 +7,7 @@ import './footer.css';
 function Footer(props) {
   return (
     <div>
-      <footer className="text-center text-lg-start">
+      <footer className="text-center text-lg-start mt-5">
         {/* Grid container */}
         <div className="container-fluid p-3 pt-5 px-5 footer-content">
           {/*Grid row*/}

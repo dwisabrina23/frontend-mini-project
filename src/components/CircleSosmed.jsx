@@ -69,5 +69,3 @@ function CircleSosmed(props) {
 }
 
 export default CircleSosmed;
-
-{/* <img src={data.image} alt={`icon ${data.title}`} /> */}

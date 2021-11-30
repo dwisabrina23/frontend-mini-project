@@ -4,7 +4,6 @@ function Catalog(props) {
     return (
         <div>
             hi from catalog
-            <Article/>
         </div>
     );
 }

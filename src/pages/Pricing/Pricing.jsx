@@ -3,7 +3,7 @@ import styles from './Pricing.module.css';
 function Pricing(props) {
     return (
         <div>
-            hi
+            
         </div>
     );
 }

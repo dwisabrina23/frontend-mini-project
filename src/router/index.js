@@ -11,6 +11,8 @@ import AdminPage from '../pages/Admin/AdminPage';
 import LoginPage from '../pages/Login/LoginPage';
 import Footer from '../components/Footer';
 import Contact from '../pages/ContactUs/Contact';
+import ProjectPage from '../pages/Projects/ProjectPage';
+import AboutUs from '../pages/AboutUs/AboutUs';
 
 function Router(props) {
     return (
@@ -52,6 +54,17 @@ function Router(props) {
             <Route exact path="/contact">
                 <Navbar/>
                 <Contact/>
+                <Footer/>
+            </Route>
+            <Route exact path="/projects">
+                <Navbar/>
+                <ProjectPage/>
+                <Footer/>
+            </Route>
+            <Route exact path="/about-us">
+                <Navbar/>
+                <AboutUs/>
+                <Footer/>
             </Route>
             <Route path="*">
                 <NotFoundPage/>
