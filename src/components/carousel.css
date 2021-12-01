@@ -1,6 +1,10 @@
 .blog_content{
   display: flex !important ;
 }
+.text-testi{
+  font-style: italic;
+  color: grey;
+}
 
 .blog_section {
     padding-top: 5rem;

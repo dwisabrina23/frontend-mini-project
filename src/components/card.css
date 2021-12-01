@@ -2,17 +2,57 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+.card-wrapper{
+    margin: 1rem 1rem;
+}
 .card-news{
     padding: 0;
     height: min-content;
 }
-.card-text {
+.card-text{
     font-size: .9rem;
-    padding: 0.4rem 1.9rem;
+    padding: 0.2rem 1.5rem;
     color: gray;
     text-align: justify;
 }
-
+.text-price{
+    text-align: left;
+    padding: 0.2rem 1.5rem;
+    color: rgb(87, 87, 87);
+}
 .overflow {
     overflow: hidden;
+}
+.text-money{
+    color: green;
+}
+.text-work{
+    background-color:"#52D988";
+    border-radius: 1em;
+    width: 30%;
+}
+.text-money2{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+
+    opacity: 0.7;
+}
+.card-title{
+    color: #347574;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+}
+
+strong{
+    color: #FE7C00;
 }

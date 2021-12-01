@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './navbar.css';
 import { NavLink, useHistory } from 'react-router-dom';
 import logoPaintastic from '../assets/logo.png';
 function Navbar() {
   let history = useHistory();
+  const [isLogged, setLogged] = useState(false)
 
   const handleClick = () => {
     history.push('/');
@@ -54,7 +55,7 @@ function Navbar() {
                     GALLERY
                   </NavLink>
                 </li>
-                <li className="nav-item ">
+                <li className="nav-item">
                     <NavLink
                       className="hoverable nav-link"
                       onClick={handleClick}
@@ -93,15 +94,25 @@ function Navbar() {
                     </NavLink>
                   </div>
                 </li>
-                <li className="b-login">
-                  <button
-                    className="btn btn-outline-success"
-                    type="button"
-                    onClick={handleClick}
-                    to="/login">
-                    Login
-                  </button>
-                </li>
+                {isLogged ? 
+                  (
+                    <li>
+                      <p>Hi Dwi!</p>
+                    </li>
+                  )
+                  :
+                  (
+                    <li className="b-login">
+                    <button
+                      className="btn btn-outline-success"
+                      type="button"
+                      onClick={handleClick}
+                      to="/login">
+                      Login
+                    </button>
+                  </li>
+                  )
+                }
               </ul>
             </div>
           </div>
