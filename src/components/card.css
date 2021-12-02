@@ -29,7 +29,8 @@
 .text-work{
     background-color:"#52D988";
     border-radius: 1em;
-    width: 30%;
+    padding: 5px 10px;
+    width: max-content;
 }
 .text-money2{
     font-family: Raleway;
@@ -55,4 +56,23 @@
 
 strong{
     color: #FE7C00;
+}
+.title-border{
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #bbbbbb96;
+    margin: 10px auto;
+    border: 1rem;
+}
+
+.title-pricing{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #347574;
 }

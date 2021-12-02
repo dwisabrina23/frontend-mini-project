@@ -1,7 +1,4 @@
-* {
-    font-family: Roboto, sans-serif;
-    color: #19345E;
-}
+
 td{
     color: #19345E !important;
     text-align: left !important;
@@ -18,7 +15,7 @@ td{
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-button{
+.button-back{
     background-color: #F47522 !important; 
     color: #ffff !important;
 }
@@ -32,12 +29,8 @@ button{
     font-style: italic;
 }
 
-.card{
+.card-review{
     padding: 50px;
     margin: auto;
     margin-top: 80px;
-}
-
-footer{
-    margin-top: -70px;
 }

@@ -3,8 +3,7 @@ import './review.css';
 import { useHistory } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { resetForm } from "../../store/formSlice";
-import dotImg from '../../assets/img-dot.png'
-
+import SubPageTitle from "../../components/SubPageTitle";
 function ReviewPage() {
   const history = useHistory();
   const dispatch = useDispatch();
@@ -20,7 +19,8 @@ function ReviewPage() {
   }
   return (
     <div>
-      <div className="card col-md-8 justify-content-center">
+      <SubPageTitle title="Review Message"/>
+      <div className="card col-md-8 justify-content-center card-review">
         <table className="table table-borderless col-md-9">
           <tr className="mb-3">
             <td className="label">Full Name</td>
@@ -66,18 +66,13 @@ function ReviewPage() {
             <button
               type="submit"
               onClick={handleClose}
-              className="btn rounded-pill px-4 py-2 font-weight-normal"
+              className="btn rounded-pill px-4 py-2 font-weight-normal button-back"
             >
               Home
             </button>
           </form>
         </div>
       </div>
-      <footer className="container-fluid" style={{"backgroundColor": "#EDF6FF", "height": "190px",  "width": "100%"}}>
-        <div>
-            <img src={dotImg} alt="" style={{"paddingLeft": "160px", "paddingTop": "30px"}}/>
-        </div>
-    </footer>
     </div>
   );
 }

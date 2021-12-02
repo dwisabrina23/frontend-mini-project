@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import Contact from '../pages/ContactUs/Contact';
 import ProjectPage from '../pages/Projects/ProjectPage';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import ReviewPage from '../pages/Review/ReviewPage';
 
 function Router(props) {
     return (
@@ -64,6 +65,11 @@ function Router(props) {
             <Route exact path="/about-us">
                 <Navbar/>
                 <AboutUs/>
+                <Footer/>
+            </Route>
+            <Route exact path="/review">
+                <Navbar/>
+                <ReviewPage/>
                 <Footer/>
             </Route>
             <Route path="*">

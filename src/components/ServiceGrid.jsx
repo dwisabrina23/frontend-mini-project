@@ -1,6 +1,7 @@
 import React from 'react';
 import GridMenu from './GridMenu';
 import ServiceData from '../Models/ServiceData';
+
 function ServiceGrid({componentTitle}) {
     return (
         <div>

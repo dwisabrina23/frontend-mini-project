@@ -1,13 +1,11 @@
 import React from 'react';
-
+import './subTitle.css';
 function SubPageTitle({title}) {
     console.log("isi title:", title)
     return (
-        <div className="py-3">
-            <h2 className="background">
-                <span className="text-white text tittle">{title}</span>
-            </h2>
-        </div>
+        <h2 className="background-hr">
+            <span className="text-title text-white">{title}</span>
+        </h2>
     );
 }
 

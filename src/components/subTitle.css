@@ -1,16 +1,16 @@
-h2 {
-    font: 33px sans-serif;
+.background-hr {
+    font: 28px sans-serif;
     margin-top: 30px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     color: #fff;
     padding: 5px 10px;
 }
-h2.background {
+.background-hr {
     position: relative;
     z-index: 1;
 }
-h2.background:before {
+.background-hr:before {
     border-top: 2px solid #dfdfdf;
     content: "";
     margin: 0 auto;
@@ -22,8 +22,8 @@ h2.background:before {
     width: 100%;
     z-index: -1;
 }
-h2.background span {
-    background: rgb(255, 153, 0);
-    padding: 5px 10px;
-    margin-left: 4rem;
+.background-hr span {
+    background: #FE7C00;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
 }

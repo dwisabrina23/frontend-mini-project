@@ -3,7 +3,7 @@ import CardWithButton from '../../components/CardWithButton';
 import CardPricing from '../../components/CardPricing';
 import useGetByGenre from '../../Hooks/useGetByGenre';
 import useGetPackage from '../../Hooks/useGetPackage';
-
+import SubPageTitle from '../../components/SubPageTitle';
 function Catalog() {
     const [genreData, setGenreData] = useState([]);
     const [packageData, setPackageData] = useState([])
@@ -12,6 +12,7 @@ function Catalog() {
     const {dataGenre, loadingGenre, errorGenre} = useGetByGenre();
     const {dataPackage, loadingPackage, errorPackage} = useGetPackage();
     console.log("data service package", dataPackage);
+
     //set use effect
     useEffect(() => {
         if(dataGenre){
@@ -23,20 +24,16 @@ function Catalog() {
         }
     }, [dataGenre, dataPackage])
 
-    // if(loadingGenre || loadingPackage){
-    //     return(
-    //         <div>
-    //             <p className='text-center'>Loading...</p>
-    //         </div>
-    //     )
-    // }
   return (
     <div>
+        <h1 className="text-page-title text-center">OUR CATALOG</h1>
         <div>
-            <h1 className="text-page-title text-center">SHOP BY PACKAGE</h1>
-                <p className="text-center">Want to discuss your ideas, projects or Requirements? Click the <b>order</b> button, fill the form and our sales representative will contact you soon! Pick your date and enjoy the process!😊🙌 </p>
+            <SubPageTitle title="SHOP BY PACKAGE"/>
+            {/* <h1 className="text-page-title text-center">SHOP BY PACKAGE</h1> */}
                 <div className="container-fluid d-flex justify-content-around" style={{ top: '20px' }}>
-                <div className="row m-3"> {
+                <div className="row m-3"> 
+                <p className="text-center mt-5">Want to discuss your ideas, projects or Requirements? Click the <b>order</b> button, fill the form and our sales representative will contact you soon! Pick your date and enjoy the process!😊🙌 </p>
+                {
                         loadingPackage ?
                         (
                             <p>loading..</p>
@@ -56,9 +53,9 @@ function Catalog() {
                     </div>
                 </div>
             </div>
-        <hr/>
         <div>
-            <h1 className="text-page-title text-center">SHOP BY GENRE</h1>
+            <SubPageTitle title="SHOP BY GENRE"/>
+            {/* <h1 className="text-page-title text-center">SHOP BY GENRE</h1> */}
             <div className="container-fluid d-flex justify-content-around" style={{ top: '20px' }}>
             <div className="row m-3">
                 {
