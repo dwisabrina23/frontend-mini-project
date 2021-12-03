@@ -5,3 +5,7 @@
 .table-data{
     vertical-align: middle;
 }
+
+td{
+    padding: 10px;
+}

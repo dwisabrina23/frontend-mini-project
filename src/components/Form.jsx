@@ -201,6 +201,10 @@ function Form() {
           <button
             type="submit"
             className="submit btn btn-primary rounded-pill mb-3"
+            style={{
+              backgroundColor: "#FE7C00",
+              border:"1px solid #FE7C00"
+          }}
           >
             Submit
           </button>

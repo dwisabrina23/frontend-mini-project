@@ -43,6 +43,7 @@ function Router(props) {
             <Route exact path="/order">
                 <Navbar/>
                 <Order/>
+                <Footer/>
             </Route>
             <Route exact path="/admin">
                 <Navbar/>

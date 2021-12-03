@@ -4,6 +4,8 @@ import CardPricing from '../../components/CardPricing';
 import useGetByGenre from '../../Hooks/useGetByGenre';
 import useGetPackage from '../../Hooks/useGetPackage';
 import SubPageTitle from '../../components/SubPageTitle';
+import Loading from '../../components/Loading';
+
 function Catalog() {
     const [genreData, setGenreData] = useState([]);
     const [packageData, setPackageData] = useState([])
@@ -26,7 +28,7 @@ function Catalog() {
 
   return (
     <div>
-        <h1 className="text-page-title text-center">OUR CATALOG</h1>
+        {/* <h1 className="text-page-title text-center">OUR CATALOG</h1>s */}
         <div>
             <SubPageTitle title="SHOP BY PACKAGE"/>
             {/* <h1 className="text-page-title text-center">SHOP BY PACKAGE</h1> */}
@@ -36,7 +38,7 @@ function Catalog() {
                 {
                         loadingPackage ?
                         (
-                            <p>loading..</p>
+                            <Loading/>
                         )
                         :packageData.map((item) => (
                             <CardPricing
@@ -61,7 +63,7 @@ function Catalog() {
                 {
                 loadingGenre ?
                 (
-                    <p>loading..</p>
+                    <Loading/>
                 )
                 :
                 genreData.map((item) => (

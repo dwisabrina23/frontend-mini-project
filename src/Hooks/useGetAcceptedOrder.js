@@ -1,7 +1,7 @@
 import {useQuery} from '@apollo/client';
 import {getAcceptedOrder} from "../GraphQL/Query";
 
-function useGetAcceptedOrder() {
+function UseGetAcceptedOrder() {
     const{
         data: dataAccepted,
         loading: loadingAccepted,
@@ -10,4 +10,4 @@ function useGetAcceptedOrder() {
     return {dataAccepted, loadingAccepted, errorAccepted};
 }
 
-export default useGetAcceptedOrder;
+export default UseGetAcceptedOrder;

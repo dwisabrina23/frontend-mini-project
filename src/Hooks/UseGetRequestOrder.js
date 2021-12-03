@@ -6,7 +6,7 @@ function UseGetRequestOrder() {
         data: dataRequest,
         loading: loadiingRequest,
         error: errorRequest,
-    } = useQuery(getRequestOrder, {fetchPolicy:"cache-and-network"});
+    } = useQuery(getRequestOrder, {fetchPolicy:"network-only"});
     return {
         dataRequest, loadiingRequest, errorRequest
     };

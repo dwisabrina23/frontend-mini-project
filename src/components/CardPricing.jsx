@@ -1,8 +1,14 @@
 import React from 'react';
 import './card.css';
+import { useHistory } from "react-router-dom";
+
 function CardPricing({work, title, content, price, url}) {
     let description = content.split(",")
 
+    const history = useHistory();
+    const handleClick = () =>{
+        history.push('/order');
+    }
     //set color for every title
     let base, accent;
     if(title === "bronze"){
@@ -43,13 +49,14 @@ function CardPricing({work, title, content, price, url}) {
                             ))
                         }
                     </ul>
-                    <a 
-                        href={url} 
+                    <button
+                        type="button"
                         className="btn btn-primary mb-2" 
                         target='_blank' 
                         rel='noreferrer'
+                        onClick={handleClick}
                         style={{backgroundColor:base, border:"1px solid"+base}}
-                    >ORDER NOW</a>
+                    >ORDER NOW</button>
                 </div>
             </div>
         </div>

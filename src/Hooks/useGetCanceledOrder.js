@@ -1,7 +1,7 @@
 import {useQuery} from '@apollo/client';
 import {getCanceledOrder} from "../GraphQL/Query";
 
-function useGetCanceledOrder() {
+function UseGetCanceledOrder() {
     const{
         data: dataCanceled,
         loading: loadingCanceled,
@@ -10,4 +10,4 @@ function useGetCanceledOrder() {
     return {dataCanceled, loadingCanceled, errorCanceled};
 }
 
-export default useGetCanceledOrder;
+export default UseGetCanceledOrder;
